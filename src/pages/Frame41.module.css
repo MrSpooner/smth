@@ -1,0 +1,237 @@
+.vectorIcon {
+  height: 18px;
+  width: 10px;
+  position: relative;
+  object-fit: contain;
+}
+.div1,
+.wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+.div1 {
+  align-self: stretch;
+  border-radius: var(--br-3xs);
+  border: 1px solid var(--color-gray-100);
+  overflow: hidden;
+  flex-direction: row;
+  align-items: center;
+  padding: var(--padding-lgi) var(--padding-5xl);
+}
+.wrapper {
+  width: 71px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 238px 11px 0 0;
+  box-sizing: border-box;
+}
+.div2 {
+  height: 34px;
+  width: 534px;
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+}
+.galleryTitleContainer {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  max-width: 100%;
+}
+.div3 {
+  height: 152px;
+  flex: 1;
+  position: relative;
+  display: inline-block;
+}
+.quoteOpenContainer {
+  width: 181px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 41px;
+  box-sizing: border-box;
+}
+.imgIcon {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.imagePairContainer {
+  height: 308px;
+  width: 236px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+  min-width: 236px;
+}
+.imgIcon1 {
+  align-self: stretch;
+  height: 320px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.secondImageContainer {
+  flex: 1;
+  flex-direction: column;
+  padding: 65px 0 0;
+  box-sizing: border-box;
+  min-width: 333px;
+}
+.content,
+.galleryImages,
+.secondImageContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.galleryImages {
+  width: 783px;
+  flex-direction: row;
+  gap: var(--gap-16xl);
+  font-size: var(--font-size-181xl);
+  color: var(--color-gainsboro-100);
+}
+.content {
+  flex: 1;
+  flex-direction: column;
+  min-width: 516px;
+}
+.div4 {
+  height: 152px;
+  width: 99px;
+  position: relative;
+  display: inline-block;
+}
+.quoteCloseContainer {
+  width: 291px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+}
+.imgIcon2 {
+  height: 148px;
+  width: 236px;
+  position: relative;
+  object-fit: cover;
+}
+.icon {
+  width: 60px;
+  height: 60px;
+  border-radius: var(--br-3xs);
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 44px 0 0;
+}
+.imgParent {
+  flex-direction: row;
+  gap: var(--gap-16xl);
+}
+.div,
+.imgParent,
+.quoteCloseContainerParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.quoteCloseContainerParent {
+  flex-direction: column;
+  gap: 42px;
+  max-width: 100%;
+  font-size: var(--font-size-181xl);
+  color: var(--color-gainsboro-100);
+}
+.div {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: var(--padding-56xl) 98px;
+  box-sizing: border-box;
+  gap: var(--gap-5xl);
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  font-size: var(--font-size-26xl);
+  color: var(--color-gray-300);
+  font-family: var(--font-sangbleu-sunrise);
+}
+@media screen and (max-width: 750px) {
+  .div2 {
+    font-size: var(--font-size-17xl);
+  }
+  .div3 {
+    font-size: var(--font-size-61xl);
+  }
+  .imagePairContainer {
+    flex: 1;
+  }
+  .galleryImages {
+    flex-wrap: wrap;
+  }
+  .content {
+    min-width: 100%;
+  }
+  .div4 {
+    font-size: var(--font-size-61xl);
+  }
+  .div {
+    padding-left: var(--padding-30xl);
+    padding-right: var(--padding-30xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .div2 {
+    font-size: var(--font-size-8xl);
+  }
+  .div3 {
+    font-size: var(--font-size-31xl);
+  }
+  .secondImageContainer {
+    padding-top: 42px;
+    box-sizing: border-box;
+  }
+  .galleryImages {
+    gap: var(--gap-mid);
+  }
+  .div4 {
+    font-size: var(--font-size-31xl);
+  }
+  .imgParent {
+    gap: var(--gap-mid);
+  }
+  .quoteCloseContainerParent {
+    gap: 21px;
+  }
+  .div {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
