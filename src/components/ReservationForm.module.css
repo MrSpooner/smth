@@ -1,0 +1,149 @@
+.h1 {
+  margin: 0;
+  height: 34px;
+  width: 522px;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+  z-index: 1;
+}
+.reservationTitle {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.div {
+  height: 11px;
+  flex: 1;
+  position: relative;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  display: inline-block;
+}
+.button {
+  width: 347px;
+  border-radius: var(--br-3xs);
+  border: 1px solid var(--color-white);
+  box-sizing: border-box;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-6xl) var(--padding-52xl) var(--padding-6xl)
+    var(--padding-53xl);
+  white-space: nowrap;
+  z-index: 1;
+}
+.div1 {
+  height: 11px;
+  position: relative;
+  letter-spacing: 1.45px;
+  font-weight: 500;
+  display: inline-block;
+}
+.button1,
+.phoneInput {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.button1 {
+  border-radius: var(--br-3xs);
+  border: 1px solid var(--color-white);
+  overflow: hidden;
+  flex-direction: row;
+  padding: var(--padding-6xl) var(--padding-20xl);
+  white-space: nowrap;
+  z-index: 1;
+}
+.phoneInput {
+  flex-direction: column;
+  padding: 0 var(--padding-3xs) 0 0;
+}
+.b {
+  height: 11px;
+  position: relative;
+  letter-spacing: 0.1em;
+  display: inline-block;
+}
+.button2,
+.inputFields,
+.reservationForm {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.button2 {
+  box-shadow: 0 4px 0#ca8532, 0 24px 90px rgba(255, 165, 54, 0.25),
+    0 0 9px rgba(255, 255, 255, 0.65) inset;
+  border-radius: var(--br-xs);
+  background: linear-gradient(-20.59deg, #ffb457, #f4e3c3);
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: row;
+  padding: var(--padding-8xl) var(--padding-52xl) var(--padding-8xl)
+    var(--padding-53xl);
+  z-index: 1;
+  font-size: var(--font-size-base);
+  color: var(--color-saddlebrown);
+}
+.inputFields,
+.reservationForm {
+  width: 1106px;
+  max-width: 100%;
+}
+.inputFields {
+  overflow-x: auto;
+  flex-direction: row;
+  gap: var(--gap-21xl);
+  text-align: left;
+  font-size: var(--font-size-mini);
+  font-family: var(--font-montserrat);
+}
+.reservationForm {
+  flex-direction: column;
+  gap: var(--gap-51xl);
+  text-align: center;
+  font-size: var(--font-size-26xl);
+  color: var(--color-white);
+  font-family: var(--font-sangbleu-sunrise);
+}
+@media screen and (max-width: 1150px) {
+  .reservationForm {
+    gap: var(--gap-16xl);
+  }
+}
+@media screen and (max-width: 1050px) {
+  .h1 {
+    font-size: var(--font-size-17xl);
+  }
+}
+@media screen and (max-width: 750px) {
+  .inputFields {
+    gap: var(--gap-xl);
+  }
+  .reservationForm {
+    gap: var(--gap-mid);
+  }
+}
+@media screen and (max-width: 450px) {
+  .h1 {
+    font-size: var(--font-size-8xl);
+  }
+  .button,
+  .button2 {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
