@@ -1,0 +1,40 @@
+.advantagesCardsIcon {
+  width: 180px;
+  height: 180px;
+  position: relative;
+  border-radius: var(--br-881xl);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.p,
+.p1 {
+  margin: 0;
+}
+.p1 {
+  color: var(--color-gray-100);
+}
+.div {
+  height: 39px;
+  position: relative;
+  line-height: 25.2px;
+  font-weight: 500;
+  display: inline-block;
+}
+.advantagesContent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 var(--padding-sm) 0 var(--padding-mini);
+}
+.advantagesCardsParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-5xl-3);
+  text-align: center;
+  font-size: var(--font-size-lgi-8);
+  color: var(--color-gray-300);
+  font-family: var(--font-montserrat);
+}
