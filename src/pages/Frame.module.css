@@ -1,35 +1,47 @@
-.icon {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  margin: 0 !important;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-  object-fit: cover;
-}
-.logotip {
-  margin: 0;
-  height: 21px;
-  width: 126px;
+.h1 {
+  height: 34px;
+  width: 355px;
   position: relative;
   font-size: inherit;
-  font-weight: 700;
+  font-weight: 400;
   font-family: inherit;
   display: inline-block;
-  z-index: 1;
+  max-width: 100%;
 }
-.logoContainer {
-  width: 1106px;
-  display: flex;
+.h1,
+.p,
+.p1 {
+  margin: 0;
+}
+.div1 {
+  height: 42px;
+  position: relative;
+  font-size: var(--font-size-lgi);
+  line-height: 29px;
+  font-weight: 500;
+  font-family: var(--font-montserrat);
+  color: var(--color-gray-100);
+  text-align: right;
+  display: inline-block;
+  max-width: 100%;
+}
+.birthdayDiscountParent,
+.header {
+  width: 1224px;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: center;
   max-width: 100%;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.birthdayDiscountParent {
+  display: grid;
+  justify-content: flex-start;
+  gap: 34.5px;
+  grid-template-columns: repeat(3, minmax(289px, 1fr));
 }
 .div {
   width: 100%;
@@ -40,36 +52,41 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 85px var(--padding-xl) 70px;
+  padding: var(--padding-56xl) var(--padding-xl);
   box-sizing: border-box;
-  gap: 266px;
+  gap: var(--gap-41xl);
   line-height: normal;
   letter-spacing: normal;
   text-align: left;
-  font-size: 30px;
-  color: var(--color-white);
-  font-family: var(--font-gilroy);
+  font-size: var(--font-size-26xl);
+  color: var(--color-gray-300);
+  font-family: var(--font-sangbleu-sunrise);
 }
-@media screen and (max-width: 1150px) {
-  .div {
-    gap: 133px;
+@media screen and (max-width: 1025px) {
+  .header {
+    flex-wrap: wrap;
   }
 }
-@media screen and (max-width: 1050px) {
-  .logotip {
-    font-size: 24px;
+@media screen and (max-width: 975px) {
+  .h1 {
+    font-size: var(--font-size-17xl);
+  }
+  .birthdayDiscountParent {
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(289px, 500px));
   }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 725px) {
+  .birthdayDiscountParent {
+    gap: var(--gap-mid);
+    grid-template-columns: minmax(289px, 1fr);
+  }
   .div {
-    gap: 66px;
+    gap: var(--gap-11xl);
   }
 }
 @media screen and (max-width: 450px) {
-  .logotip {
-    font-size: 18px;
-  }
-  .div {
-    gap: 33px;
+  .h1 {
+    font-size: var(--font-size-8xl);
   }
 }
