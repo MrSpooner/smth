@@ -9,34 +9,26 @@ const FrameComponent: FunctionComponent<FrameComponentType> = ({
   className = "",
 }) => {
   return (
-    <section className={[styles.quoteContainerWrapper, className].join(" ")}>
-      <div className={styles.quoteContainer}>
-        <div className={styles.quoteContent}>
-          <div className={styles.quoteIcon}>
-            <div className={styles.div}>
-              <img
-                className={styles.vectorIcon}
-                loading="lazy"
-                alt=""
-                src="/vector2.svg"
-              />
+    <section className={[styles.homeInner, className].join(" ")}>
+      <div className={styles.frameParent}>
+        <div className={styles.parent}>
+          <h1 className={styles.h1}>СПОКОЙНАЯ АТМОСФЕРА</h1>
+          <div className={styles.wrapper}>
+            <h3 className={styles.h3}>
+              Для ценителей высокого сервиса и максимального комфорта
+            </h3>
+          </div>
+        </div>
+        <div className={styles.bookingButtonsWrapper}>
+          <div className={styles.bookingButtons}>
+            <div className={styles.button}>
+              <b className={styles.b}>ЗАБРОНИРОВАТЬ ЗАЛ</b>
             </div>
-            <div className={styles.div1}>
-              <img
-                className={styles.vectorIcon1}
-                loading="lazy"
-                alt=""
-                src="/vector3.svg"
-              />
+            <div className={styles.button1}>
+              <div className={styles.div}>ЗАКАЗАТЬ ЗВОНОК</div>
             </div>
           </div>
         </div>
-        <img
-          className={styles.lineIcon}
-          loading="lazy"
-          alt=""
-          src="/line.svg"
-        />
       </div>
     </section>
   );
